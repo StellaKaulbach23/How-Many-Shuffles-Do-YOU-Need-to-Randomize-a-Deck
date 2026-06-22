@@ -1,3 +1,7 @@
+if (!requireNamespace("Rcpp", quietly = TRUE)) {
+  install.packages("Rcpp", repos = "https://cloud.r-project.org")
+}
+
 library(Rcpp)
 sourceCpp("simulate_human_shuffle.cpp")
 
